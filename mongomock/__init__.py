@@ -61,8 +61,8 @@ except ImportError:
     class WriteError(OperationFailure):
         pass
 
-from .helpers import ObjectId  # noqa
 from mongomock.__version__ import __version__
+from .helpers import ObjectId  # noqa
 
 
 __all__ = [

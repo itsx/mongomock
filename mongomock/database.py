@@ -1,11 +1,10 @@
 from collections import OrderedDict
+from six import string_types
 
 from . import CollectionInvalid
 from . import InvalidName
 from . import OperationFailure
 from .collection import Collection
-
-from six import string_types
 
 
 class Database(object):

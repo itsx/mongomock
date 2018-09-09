@@ -1,13 +1,13 @@
 from datetime import datetime
-
-from .helpers import ObjectId, RE_TYPE
-from . import OperationFailure
-
 import numbers
 import operator
 import re
 from sentinels import NOTHING
 from six import iteritems, string_types
+
+from .helpers import ObjectId, RE_TYPE
+from . import OperationFailure
+
 try:
     from types import NoneType
 except ImportError:

@@ -1,11 +1,14 @@
 from collections import OrderedDict
 from datetime import datetime, timedelta, tzinfo
-from mongomock import InvalidURI
 import re
-from six.moves.urllib_parse import unquote_plus
-from six import iteritems, string_types
 import warnings
 
+from six.moves.urllib_parse import unquote_plus
+from six import iteritems, string_types
+
+from mongomock import InvalidURI
+
+# pylint: disable=ungrouped-imports
 
 # Get ObjectId from bson if available or import a crafted one. This is not used
 # in this module but is made available for callers of this module.
